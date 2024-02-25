@@ -1,5 +1,5 @@
 document.getElementById('twitterShare').addEventListener('click', () => {
-    const shareUrl = `https://twitter.com/intent/tweet?url=${encodeURIComponent(document.location.href)}&text=${encodeURIComponent('ページのタイトルや共有したいテキスト')}`;
+    const shareUrl = `https://twitter.com/intent/tweet?url=${encodeURIComponent(document.location.href)}&text=${encodeURIComponent('ありがとうを伝えよう。')}`;
     window.open(shareUrl, '_blank');
   });
 
