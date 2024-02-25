@@ -8,7 +8,9 @@ document.addEventListener('DOMContentLoaded', () => {
         'spin-fast 0.2s linear infinite',
         'fadeInOut 3s infinite',
         'shake 1s infinite',
-        'bigBounce 2s infinite'
+        'bigBounce 2s infinite',
+        'flyAway 3s ease-in forwards',
+        'spinAndMove 10s infinite linear'
     ];
 
     let randomAnimation;
