@@ -13,10 +13,15 @@ body {
     background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
     -webkit-background-clip: text;
     background-clip: text;
-    animation: spin 1s linear infinite, bounce 2s infinite, pulse 3s infinite ease-in-out, sway 5s infinite ease-in-out;
+    animation: spin 1s linear infinite, spin-fast 0.2s linear infinite, bounce 2s infinite, pulse 3s infinite ease-in-out, sway 5s infinite ease-in-out;
 }
 
 @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes spin-fast {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
 }
