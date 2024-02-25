@@ -1,4 +1,3 @@
-
 document.addEventListener('DOMContentLoaded', () => {
     const thankYou = document.querySelector('.thank-you');
     const animations = [
@@ -7,8 +6,15 @@ document.addEventListener('DOMContentLoaded', () => {
         'pulse 3s infinite ease-in-out',
         'sway 5s infinite ease-in-out',
         'spin-fast 0.2s linear infinite',
+        'fadeInOut 3s infinite',
+        'shake 1s infinite',
+        'bigBounce 2s infinite'
     ];
 
-    const randomAnimation = animations[Math.floor(Math.random() * animations.length)];
+    let randomAnimation;
+    do {
+        randomAnimation = animations[Math.floor(Math.random() * animations.length)];
+    } while (thankYou.style.animation === randomAnimation);
+
     thankYou.style.animation = randomAnimation;
 });

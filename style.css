@@ -13,7 +13,6 @@ body {
     background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
     -webkit-background-clip: text;
     background-clip: text;
-    animation: spin 1s linear infinite, spin-fast 0.2s linear infinite, bounce 2s infinite, pulse 3s infinite ease-in-out, sway 5s infinite ease-in-out;
 }
 
 @keyframes spin {
@@ -57,6 +56,22 @@ body {
     50% {
         transform: rotate(3deg);
     }
+}
+
+@keyframes fadeInOut {
+    0%, 100% { opacity: 0; }
+    50% { opacity: 1; }
+}
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-10px); }
+    75% { transform: translateX(10px); }
+}
+
+@keyframes bigBounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-50px); }
 }
 
 @media (max-width: 768px) {
