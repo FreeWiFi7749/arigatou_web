@@ -13,7 +13,7 @@ body {
     background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
     -webkit-background-clip: text;
     background-clip: text;
-    animation: spin 5s linear infinite;
+    animation: spin 1s linear infinite, bounce 2s infinite, pulse 3s infinite ease-in-out, sway 5s infinite ease-in-out;
 }
 
 @keyframes spin {
@@ -30,6 +30,27 @@ body {
     }
     60% {
         transform: translateY(-15px);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes sway {
+    0%, 100% {
+        transform: rotate(-3deg);
+    }
+    50% {
+        transform: rotate(3deg);
     }
 }
 
