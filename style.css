@@ -53,8 +53,3 @@ body {
         transform: rotate(3deg);
     }
 }
-
-.thank-you {
-    animation: spin 1s linear infinite, bounce 2s infinite;
-}
-
