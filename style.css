@@ -34,6 +34,6 @@ body {
 }
 
 .thank-you {
-    animation: spin 5s linear infinite, bounce 2s infinite;
+    animation: spin 1s linear infinite, bounce 2s infinite;
 }
 
