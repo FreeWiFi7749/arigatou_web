@@ -53,3 +53,12 @@ body {
         transform: rotate(3deg);
     }
 }
+
+@media (max-width: 768px) {
+    .thank-you {
+        font-size: 2em;
+    }
+    body {
+        flex-direction: column;
+    }
+}
