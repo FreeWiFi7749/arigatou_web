@@ -1,4 +1,4 @@
-<script>
+
 document.addEventListener('DOMContentLoaded', () => {
     const thankYou = document.querySelector('.thank-you');
     const animations = [
@@ -11,4 +11,3 @@ document.addEventListener('DOMContentLoaded', () => {
     const randomAnimation = animations[Math.floor(Math.random() * animations.length)];
     thankYou.style.animation = randomAnimation;
 });
-</script>
